@@ -100,9 +100,10 @@ def generate_binary_sequence(rng, count):
         byte = 0
         for bit in range(8):
             if len(binary_data) * 8 + bit < count:
-                byte |= (rng.random_int() & 1) << (7 - bit)
+                byte |= (rng.random() & 1) << (7 - bit)  # Use rng.random() instead of rng.random_int()
         binary_data.append(byte)
     return binary_data
+
 
 # Function to generate range sequence
 def generate_range_sequence(rng, range_, count):

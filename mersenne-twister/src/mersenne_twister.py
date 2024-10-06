@@ -45,7 +45,7 @@ class MersenneTwister:
 
 
 # Example of using the MersenneTwister class
-seed = 12345
+seed = 2**128
 mt = MersenneTwister(seed)
 
 # Generate a sequence of random integers

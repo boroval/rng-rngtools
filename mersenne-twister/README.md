@@ -65,5 +65,5 @@ node rngtool.js -rw -n 15000000000 -f file01.bin -sf file01.sf
 python rng_tool.py -rw -s 0xFFFFFFFF -n 1000000 -f file02.bin
 node rng_tool.py -rw -s 0xFFFFFFFF -n 1000000 -f file02.bin
 
-python rng_tool.py -r 90 -n 100000 -f file03.txt
+python rng_tool.py -rw aes -r 90 -n 100000 -f file03.txt
 node rng_tool.py -r 90 -n 100000 -f file03.txt
